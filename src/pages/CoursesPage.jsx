@@ -1,89 +1,101 @@
-import Header from "../components/Header/Header";
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 const CoursesPage = () =>{
     return(
-        <div>
-            <Header/>
+        <div className="page-container" style={{overflow:"auto"}}>
             <h1>Our Academic Programs </h1>
-          <p>Vivekanand college offers a comprehensive range of undergraduate and postgraduate
-            <br/> programs designed to equip students with the knowledge and skills demanded by today's 
-            <br/>dynamic global landscape. Our curriclum is regularly updated to reflect indistry tranda and academic advancements.
+            <p>Vivekanand college offers a comprehensive range of undergraduate and postgraduate
+            programs designed to equip students with the knowledge and skills demanded by today's 
+            dynamic global landscape. Our curriculum is regularly updated to reflect indistry trands and academic advancements.
           </p>
-          <h2><b>Discover Campus Life</b></h2>
-          <video src="\Videoes\college-tour-FAmcnyfF.mp4" type="video1/mp4" style={{width:"600px",height:'300px'}} controls/>
+          <h2>Discover Campus Life</h2>
+          <div className="video-container">
+          <video controls width="100%" height="auto" className="course-video">
+            <source src="\Videoes\college-tour-FAmcnyfF.mp4"/>
+            Your browser does not support the video tag.
+          </video>
+          <p className="video-caption">Get a glimpse of the vibrant academic and social life at Vivekanand College.</p>
+          </div>
           <h2>Undergraduate Programs (UG) </h2>
           <ul>
-           <b> <li>Bachelor of Science(B.Sc)</li></b>
+           <li><b>Bachelor of Science(B.Sc)</b>
               <ul>
                 <li>Computer Science (3 Years)</li>
                 <li>Information Technology (3 Years)</li>
                 <li>Biotechnology (3 Years)</li>
               </ul>
-           <b> <li>Bachlor of Commerce (B.Com)</li></b>  
+            </li>
+           <li><b>Bachlor of Commerce (B.Com)</b> 
                <ul>
                 <li>Accounting & Finance (3 Years)</li>
                 <li>Banking & Insurance (3 Years)</li>
-                </ul> 
-           <b> <li>Bachelor of Arts (3 Years)</li></b>
+                </ul>
+            </li> 
+           <li><b>Bachelor of Arts (3 Years)</b>
                <ul>
                 <li>English Literature (3 Years)</li>
                 <li>Psychology (3 Years)</li>
-                </ul>   
+                </ul> 
+            </li>  
           </ul>
 
           <h2>Postgraduate Programs (PG)</h2>
             <ul>
-              <li>Master of Science(M.Sc)</li>
+              <li><b>Master of Science(M.Sc)</b></li>
                 <ul>
                   <li>Computer Science(2 Years)</li>
                   <li>Information Technology(2 Years)</li>
                 </ul>
-               <li>Master Of Commerce(M.Com)(2 Years)</li>
-               <li>Master of Arts(M.A.)(2 Years)</li> 
+               <li><b>Master Of Commerce(M.Com)</b>(2 Years)</li>
+               <li><b>Master of Arts(M.A.)</b>(2 Years)</li>
             </ul>
-            <h2>Program Details & Free Structure(Annual)</h2>
-            <table width="50%" border="1px">
-              <tr>
-                <th>Program Type</th>
-                <th>Course Name</th>
-                <th>Duration</th>
-                <th>Annual Fee</th>
-                <th>Eligiblity</th>
-              </tr>
-              <tr>
-                <th>UG</th>
-                <th>B.C.S</th>
-                <th>3 Years</th>
-                <th>80,000 Rs.</th>
-                <th>10+2 with PCM(50%)</th>
-              </tr>
-              <tr>
-                <th>UG</th>
-                <th>B.Com.Accounting&Finance</th>
-                <th>3 Years</th>
-                <th>75,000 Rs.</th>
-                <th>10+2 commerce (50%)</th>
-              </tr>
-              <tr>
-                <th>PG</th>
-                <th>M.Sc.Information Technology</th>
-                <th>2 Years</th>
-                <th>85,000 Rs.</th>
-                <th>B.Sc. IT/CS (50%)</th>
-              </tr>
 
+            <h2>Program Details & Fee Structure(Annual)</h2>
+            <table className="admissions-table course-details-table">
+              <thead>
+                <tr>
+                   <th>Program Type</th>
+                   <th>Course Name</th>
+                   <th>Duration</th>
+                   <th>Annual Fee</th>
+                   <th>Eligibility</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                   <td>UG</td>
+                   <td>B.Sc. Computer Science</td>
+                   <td>3 Years</td>
+                   <td>₹ 80,000</td>
+                   <td>10+2 with PCM(50%)</td>
+                </tr>
+                <tr>
+                   <td>UG</td>
+                   <td>B.Com.Accounting&Finance</td>
+                   <td>3 Years</td>
+                   <td>₹ 75,000</td>
+                   <td>10+2 commerce (50%)</td>
+                </tr>
+                <tr>
+                   <td>PG</td>
+                   <td>M.Sc.Information Technology</td>
+                   <td>2 Years</td>
+                   <td>₹ 85,000</td>
+                   <td>B.Sc. IT/CS (50%)</td>
+                </tr>
+              </tbody>
             </table>
 
             <h2> Specialized & Vocational Courses</h2>
             <p>In addition to traditional degree programs, we offer various certificate and 
-              <br/>diploma courses in areas like Digital Marketing, Web Development, Data Analytics,
-              <br/> and Soft Skills Development, providing specialized training for career enhancement.</p>
-
-              <p>Have questions about a specific course?</p>
-              <a href="Contact">
-                <button style={{backgroundColor:'green'}}>Inquire about Courses</button>
-              </a>
+              diploma courses in areas like Digital Marketing, Web Development, Data Analytics,
+              and Soft Skills Development, providing specialized training for career enhancement.
+            </p>
+            <div className="call-to-action">
+            <p>Have questions about a specific course?</p>
+            <Link to="/contact" className="btn">Inquire About Courses</Link>
+            </div>
         </div>
-    )
+    );
 }
 export default CoursesPage;

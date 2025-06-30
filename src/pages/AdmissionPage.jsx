@@ -1,25 +1,29 @@
-import Header from "../components/Header/Header";
+import { Link } from "react-router-dom";
 
 const AdmissionPage = () =>{
     return(
-        <div>
-            <Header/>
-            <h2>Admissions at Vivekanand College </h2>
+        <div className="page-container" style={{overflow:"auto"}}>
+            <h1>Admissions at Vivekanand College </h1>
             <p>Welcome to the Admission page of Vivekanand College! We are delighted you're considering
-                <br/>joining our vibrant academic community. Our admission process is designed to be straightforward 
-                and Accessible  </p>
+            joining our vibrant academic community. Our admission process is designed to be straightforward 
+            and accessible.
+            </p>
 
             <p>Please review the eligibility criteria and key dates below for the upcoming academic year.
-                 For any queries, feel free to contact our admissions office.</p>   
+            For any queries, feel free to contact our admissions office.
+            </p>   
 
            <h2>Eligibility Criteria for Undergraduate Programs</h2>
-            <table border="1px">
+            <table className="admissions-table">
+              <thead>
                 <tr>
-                    <td>Program</td>
-                    <td>Minimum <br/>Qualification</td>
-                    <td>Required Subject</td>
-                    <td>Minimum Marks(%)</td>
+                    <th>Program</th>
+                    <th>MinimumQualification</th>
+                    <th>Required Subject</th>
+                    <th>Minimum Marks(%)</th>
                 </tr>
+              </thead>
+              <tbody>
                 <tr>
                     <td>B.Sc Computer Science</td>
                     <td>10+2(or equivalent)</td>
@@ -38,8 +42,7 @@ const AdmissionPage = () =>{
                     <td>Any Stream</td>
                     <td>45%</td>
                 </tr>
-
-
+              </tbody>
             </table>
 
            <h2>Application Process</h2>
@@ -51,8 +54,12 @@ const AdmissionPage = () =>{
             <li><b>Fee Payment:</b> Complete the admission by paying the required fees.</li>
             </ol> 
 
-            <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our 
-                <a href="/courses">Courses page</a> or <a href="/contact">Contact us</a> directly.</p>
+            <p>For detailed information on postgraduate program admissions,
+            specific program syllabi, and fee structures, please visit our{" "}
+            <Link to="/courses">Courses page</Link> or{" "}
+            <Link to="/contact">Contact us</Link> directly.
+            </p>
+
         </div>
     )
 }

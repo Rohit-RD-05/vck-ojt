@@ -1,24 +1,26 @@
-import Header from "../components/Header/Header";
-
+import { Link } from "react-router-dom";
 const HomePage = () =>{
     return(
-        <div>
-            <Header/>
-            <img src="/Images/header-new.jpg" alt='vck2'/>
-           
-            
+        <div className="page-container" style={{overflow:"auto"}}>
+            <div className="hero-section">
+            <img src="/Images/header-new.jpg" alt='vck2' className="hero-banner-image"/>
+            <div className="hero-overlay-text">
+                <h1>Welcome to Vivekanand College!</h1>
+                <p>Your journey to excellence starts here.</p>
+                <Link to="/adm" className="btn hero-btn">Apply Now!</Link>{""}
+            </div>
+            </div>
             <p><b>Vivekanand College</b> is a premier educational dedicated to fortering 
-            <br/>academic excellence, innovation, and holistic development.
-            <br/>Established in 1980, we have proudly served generations of students,
-            <br/>empowering them to achieve their full potential.</p>
-            <br/>
+            academic excellence, innovation, and holistic development.
+            Established in 1980, we have proudly served generations of students,
+            empowering them to achieve their full potential.
+            </p>
             <p>At Vivekanand College, we believe in a vibrant learning environment 
-            <br/>that extends beyond textbooks. Our state-of-the-art facilities, experienced faculty, 
-            <br/>and diverse student community create a unique ecosystem where curiosity thrives and 
-            <br/>future leaders are shaped.
-
+            that extends beyond textbooks. Our state-of-the-art facilities, experienced faculty, 
+            and diverse student community create a unique ecosystem where curiosity thrives and 
+            future leaders are shaped.
+            </p>
             <h2>Why Choose Vivekanand College?</h2>
-            <hr/>
             <ul>
                 <li><b>Legacy of Excellence:</b>Decades of commitment to quality education.</li>
                 <li><b>Experienced Faculty:</b> Learn from renowned experts and passionate educators.</li>
@@ -26,16 +28,19 @@ const HomePage = () =>{
                 <li><b>Holistic Development:</b> Focus on co-curricular activities, sports, and community service.</li>
                 <li><b>Strong Placements:</b> Excellent career opportunities with leading companies.</li>
             </ul>
-</p>
-            <img src="Images\students-studying-DbLGuwF_.jpg" alt='VCK' width={900} height={300}/>    
-            <img src="Images\campus-life-Crkero7B.jpg" alt="vck1" width={900} height={300}/>
+            <h2>Campus Life & Facilities</h2>
+            <div className="image-gallery">
+            <img src="Images\students-studying-DbLGuwF_.jpg" alt='VCK'/>    
+            <img src="Images\campus-life-Crkero7B.jpg" alt="vck1"/>
+            </div>
             <p>Explore our vibrant campus and state-of-the-art facilities 
-                designed to enhance your learning experience and personal growth.</p>
-                  
-                  <h4>Ready to explor our courses?</h4>
-                  <a href="/courses">
-                  <button style={{  backgroundColor:"green",color:"black",textAlign:"center"}}>Explore Courses</button>
-                  </a>
+            designed to enhance your learning experience and personal growth.
+            </p>
+            <div className="call-to-action">
+                <p>Ready to axplore our courses?</p>
+                <Link to="/courses" className="btn">Explore Courses</Link>{""}
+            </div>
+            
         </div>
     )
 }
