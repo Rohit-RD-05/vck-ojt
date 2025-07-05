@@ -66,26 +66,25 @@ const CoursesPage = () =>{
                    <td>UG</td>
                    <td>B.Sc. Computer Science</td>
                    <td>3 Years</td>
-                   <td>₹ 80,000</td>
-                   <td>10+2 with PCM(50%)</td>
+                   <td>₹ 85,000</td>
+                   <td>10+2 with PCM (50%)</td>
                 </tr>
                 <tr>
                    <td>UG</td>
-                   <td>B.Com.Accounting&Finance</td>
+                   <td>B.Com. Accounting & Finance</td>
                    <td>3 Years</td>
-                   <td>₹ 75,000</td>
-                   <td>10+2 commerce (50%)</td>
+                   <td>₹ 70,000</td>
+                   <td>10+2 commerce (45%)</td>
                 </tr>
                 <tr>
                    <td>PG</td>
-                   <td>M.Sc.Information Technology</td>
+                   <td>M.Sc. Information Technology</td>
                    <td>2 Years</td>
-                   <td>₹ 85,000</td>
+                   <td>₹ 95,000</td>
                    <td>B.Sc. IT/CS (50%)</td>
                 </tr>
               </tbody>
             </table>
-
             <h2> Specialized & Vocational Courses</h2>
             <p>In addition to traditional degree programs, we offer various certificate and 
               diploma courses in areas like Digital Marketing, Web Development, Data Analytics,

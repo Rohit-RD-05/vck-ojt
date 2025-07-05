@@ -1,12 +1,13 @@
 .page-container {
-    max-width: 960px;
-    height: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 960px;
+  height: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 .page-container h1 {
   color: #007BFF;
   text-align: center;
@@ -170,7 +171,6 @@
   line-height: 1.6;
 }
 
-
 .video-container {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -196,8 +196,8 @@
   border-bottom-right-radius: 8px;
 }
 
-/* .course-details-table{
-
+/* .course-details-table {
+  
 } */
 
 @keyframes fadeInUptoBottom {
@@ -247,7 +247,7 @@
     height: 180px;
   }
 
-  .admissions-table thead,
+  */  .admissions-table thead,
   .admissions-table tbody,
   .admissions-table th,
   .admissions-table td,
@@ -255,9 +255,11 @@
     display: block;
     width: auto;
   }
+
 }
 
 @media (max-width: 480px) {
+
   .page-container {
     padding: 10px;
   }

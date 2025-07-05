@@ -1,16 +1,16 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
-import HomePage from "./pages/HomePage"
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer"
-import AboutPage from "./pages/AboutPage"
-import AdmissionPage from "./pages/AdmissionPage"
-import CoursesPage from "./pages/CoursesPage"
-import ContactPage from "./pages/ContactPage"
-import NotFoundPage from "./pages/NotFoundPage"
-import "./styles/Pages.css"
-import ChatbotComponent from "./components/Chatbot/ChatbotComponents"
-import { useState } from "react"
-import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup"
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import AboutPage from "./pages/AboutPage";
+import AdmissionPage from "./pages/AdmissionPage";
+import CoursesPage from "./pages/CoursesPage";
+import ContactPage from "./pages/ContactPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import "./styles/Pages.css";
+import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
+import { useState } from "react";
+import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
 
 const App =() => {
   const [showPopup, setShowPopup] = useState(true);

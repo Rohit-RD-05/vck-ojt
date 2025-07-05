@@ -18,29 +18,29 @@ const AdmissionPage = () =>{
               <thead>
                 <tr>
                     <th>Program</th>
-                    <th>MinimumQualification</th>
+                    <th>Minimum Qualification</th>
                     <th>Required Subject</th>
-                    <th>Minimum Marks(%)</th>
+                    <th>Minimum Marks (%)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                    <td>B.Sc Computer Science</td>
-                    <td>10+2(or equivalent)</td>
-                    <td>Physics,Chemistry,Maths</td>
+                    <td>B.Sc. Computer Science</td>
+                    <td>10+2 (or equivalent)</td>
+                    <td>Physics, Chemistry, Maths</td>
                     <td>50%</td>
                 </tr>
                 <tr>
-                    <td>B.Com.Accounting & Finance</td>
-                    <td>10+2(or equivalent)</td>
+                    <td>B.Com. Accounting & Finance</td>
+                    <td>10+2 (or equivalent)</td>
                     <td>Commerce Stream</td>
                     <td>45%</td>
                 </tr>
                 <tr>
-                    <td>B.A.English Literature</td>
-                    <td>10+2(or equivalent)</td>
+                    <td>B.A. English Literature</td>
+                    <td>10+2 (or equivalent)</td>
                     <td>Any Stream</td>
-                    <td>45%</td>
+                    <td>40%</td>
                 </tr>
               </tbody>
             </table>
